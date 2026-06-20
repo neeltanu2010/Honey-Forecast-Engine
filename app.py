@@ -16,7 +16,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import TimeSeriesSplit
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
-from protect import protect_app, logout
+
 
 try:
     from xgboost import XGBRegressor
@@ -41,7 +41,8 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
-
+from protect import protect_app, logout
+protect_app()
 # =====================================================
 # PREMIUM CSS — MOBILE + DESKTOP
 # =====================================================
