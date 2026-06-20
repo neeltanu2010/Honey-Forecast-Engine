@@ -16,6 +16,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import TimeSeriesSplit
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
+from protect import protect_app, logout
 
 try:
     from xgboost import XGBRegressor
